@@ -1,0 +1,154 @@
+/* Button Component Library */
+.btn {
+    display: inline-block;
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Primary Button */
+.btn-primary {
+    background-color: #6e8efb;
+    color: white;
+    border-color: #6e8efb;
+}
+
+.btn-primary:hover {
+    background-color: #5a7df7;
+    border-color: #5a7df7;
+}
+
+.btn-primary:active {
+    background-color: #4a6de7;
+    border-color: #4a6de7;
+}
+
+/* Secondary Button */
+.btn-secondary {
+    background-color: #f8f9fa;
+    color: #333;
+    border-color: #ddd;
+}
+
+.btn-secondary:hover {
+    background-color: #e9ecef;
+    border-color: #ccc;
+}
+
+.btn-secondary:active {
+    background-color: #dae0e5;
+    border-color: #bbb;
+}
+
+/* Outlined Primary Button */
+.btn-outline-primary {
+    background-color: transparent;
+    color: #6e8efb;
+    border-color: #6e8efb;
+}
+
+.btn-outline-primary:hover {
+    background-color: #6e8efb;
+    color: white;
+}
+
+/* Disabled Button */
+.btn-disabled, .btn:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+    pointer-events: none;
+    background-color: #cccccc;
+    border-color: #cccccc;
+    color: #666666;
+}
+
+/* Button Sizes */
+.btn-sm {
+    padding: 5px 10px;
+    font-size: 0.875rem;
+}
+
+.btn-lg {
+    padding: 12px 24px;
+    font-size: 1.25rem;
+}
+
+/* Full-width Button */
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+/* Button with Icon */
+.btn-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-icon i, .btn-icon svg {
+    margin-right: 8px;
+}
+
+/* Call to Action Button */
+.cta-button {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.cta-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.cta-button:active {
+    transform: translateY(1px);
+}
+/* Component Showcase Styles */
+.component-showcase {
+    padding: 80px 0;
+}
+
+.component-showcase h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.showcase-intro {
+    text-align: center;
+    margin-bottom: 50px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #666;
+}
+
+.showcase-section {
+    margin-bottom: 40px;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.showcase-section h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}

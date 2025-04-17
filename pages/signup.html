@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - GigFloww</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/components.css">
+    <link rel="stylesheet" href="../styles/signup.css">
+</head>
+<body>
+    <!-- Navigation Bar (same as index.html) -->
+    <nav class="navbar">
+        <!-- Copy navigation from index.html -->
+    </nav>
+    
+    <!-- Sign-Up Form Section -->
+    <section class="signup-section">
+        <div class="container">
+            <div class="signup-container">
+                <h1>Join GigFloww</h1>
+                <p class="signup-intro">Create your account and start your freelance journey today.</p>
+                
+                <form id="signup-form" class="signup-form">
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" name="fullname" required>
+                        <span class="error-message" id="fullname-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="skill-category">Skill Category</label>
+                        <select id="skill-category" name="skill-category" required>
+                            <option value="" disabled selected>Select your primary skill</option>
+                            <option value="design">Design</option>
+                            <option value="development">Development</option>
+                            <option value="writing">Writing & Content</option>
+                            <option value="marketing">Marketing</option>
+                            <option value="video">Video & Animation</option>
+                            <option value="music">Music & Audio</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <span class="error-message" id="skill-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="portfolio">Portfolio Link (Optional)</label>
+                        <input type="url" id="portfolio" name="portfolio">
+                        <span class="error-message" id="portfolio-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+                    </div>
+                </form>
+                
+                <div id="success-message" class="success-message" style="display: none;">
+                    <h2>Thank You for Joining GigFloww!</h2>
+                    <p>Your account has been created successfully. We've sent a confirmation email with next steps.</p>
+                    <a href="../index.html" class="btn btn-secondary">Return to Home</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer (same as index.html) -->
+    <footer>
+        <!-- Copy footer from index.html -->
+    </footer>
+    
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/form-validation.js"></script>
+</body>
+</html>
